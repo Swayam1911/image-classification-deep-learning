@@ -108,7 +108,8 @@ model.fit(
 # Save model and class labels
 pathlib.Path("model").mkdir(exist_ok=True)
 
-model.save("model/flower_model.keras")
+model.save("model/flower_model.h5")
+
 
 with open("model/class_names.json", "w") as f:
     json.dump(class_names, f)

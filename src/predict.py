@@ -2,7 +2,8 @@ import tensorflow as tf
 import numpy as np
 import json
 
-model = tf.keras.models.load_model("model/flower_model.keras")
+model = tf.keras.models.load_model("model/flower_model.h5")
+
 
 with open("model/class_names.json", "r") as f:
     class_names = json.load(f)
